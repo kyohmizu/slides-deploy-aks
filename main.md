@@ -1,8 +1,7 @@
 class: center, middle, blue
-# Deploy Mattermost on AKS
+# Cluster Management on Azure
 
 ---
-exclude: true
 ### whoami
 
 .left-small[
@@ -21,23 +20,23 @@ exclude: true
 ]
 
 ---
-### Source
+### Motivation
 
-<u><https://github.com/kyohmizu/mattermost-aks></u>
+- I've been studying kubernetes for half a year
 
----
-### Tools
+- But I don't use kubernetes for work...
 
-- Terraform
-
-  - Cluster configuration management
-
-- Helm
-
-  - Template engine
+- So, I tried to create cluster by myself
 
 ---
-### Configuration(After)
+class: header-margin
+### Why AKS?
+
+<center><img src="azure-subscription-top.png" width=100%></center>
+<center><img src="azure-subscription.png" width=100%></center>
+
+---
+### Configuration
 
 .zoom1[
 - Kubernetes Cluster(AKS)
@@ -62,17 +61,56 @@ exclude: true
 ]
 
 ---
-### future prospects
+### Features
+
+.zoom1[
+- Monitoring
+
+  - Prometheus + Grafana
+
+- Logging
+
+  - Fluent Bit + Azure Log Analytics
+
+- TLS support
+
+  - Cert Manager
+
+- Secret management
+
+  - Azure Key Vault
+]
+
+---
+### Problems
+
+.zoom1[
+- Azure Key Vault doesn't support env variables  
+<u><https://github.com/Azure/kubernetes-keyvault-flexvol/issues/28></u>
+
+- I can't see secrets of Azure Key Vault which was created with terraform  
+  (something wrong with access policies)
+]
+
+---
+### Next Step
 
 .zoom1[
 - Continuous Delivery
 
-  - Spinnaker/Tekton
+  - Spinnaker, Argo CD, Tekton
 
 - Service Mesh
 
-  - Istio/SMI
+  - Istio, SMI
 ]
+
+---
+### Source
+
+<u><https://github.com/kyohmizu/mattermost-aks></u>
+
+- Any ideas are appreciated!!
 
 ---
 class: center, middle, blue

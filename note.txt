@@ -1,0 +1,15 @@
+Today I'm going to talk about the cluster management on Azure.
+
+My name is Kyohei Mizumoto.
+I'm a software engineer using C#
+
+I'm studying kubernetes, but I don't use it for work.
+I wanted to test out the features of kubernetes, so I made the study project on Azure.
+
+I chose Microsoft Azure because I have some free credit.
+
+This is the configuration of my project.
+I combined Azure managed services and kubernetes resources.
+
+
+
