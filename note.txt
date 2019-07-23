@@ -5,8 +5,8 @@ My name is Kyohei Mizumoto.
 I'm a software engineer who mainly uses C#, and currently studying kubernetes. 
 
 I don't use kubernetes for work.
-So in order deepen my understanding and to test out the features of kubernetes,
-I tried to make a project on Azure.
+So in order to deepen my understanding and to test out the features of kubernetes,
+I made a project on Azure.
 
 I chose Microsoft Azure just because I have some free credit.
 AS an application running on the cluster, I chose mattermost.
