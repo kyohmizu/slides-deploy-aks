@@ -102,6 +102,23 @@ class: header-margin
 ]
 
 ---
+### IaC
+
+- All services (but DB) are managed with terraform
+
+  - azurerm_resource_group
+  - azurerm_kubernetes_cluster
+  - azurerm_key_vault
+  - azurerm_key_vault_secret
+  - azurerm_log_analytics_workspace
+
+```bash
+$ terraform apply
+```
+
+- Otheres are manifests
+
+---
 ### Problems
 
 .zoom1[
@@ -109,10 +126,10 @@ class: header-margin
 <u><https://github.com/Azure/kubernetes-keyvault-flexvol/issues/28></u>  
   (How can I deploy legacy apps using env variables?)
 
-- Secrets of Azure Key Vault, which were created with terraform, were inaccessible outside  
+- Secrets on Azure Key Vault (which were created with terraform) are now inaccessible from outside the cluster  
   (Something wrong with access policies)
 
-- Metrics of prometheus and fluent bit are not enough  
+- Metrics settings of prometheus and fluent bit are not enough  
 ]
 
 ---

@@ -1,22 +1,32 @@
-Today I'm going to talk about the cluster management on Azure.
+Good evening everyone.
+Today I'm going to talk about my self-study project on Azure.
 
 My name is Kyohei Mizumoto.
-I'm a software engineer using C#
+I'm a software engineer who mainly uses C#, and currently studying kubernetes. 
 
-I'm studying kubernetes, but I don't use it for work.
-I wanted to test out the features of kubernetes, so I made the study project on Azure.
+I don't use kubernetes for work.
+So in order deepen my understanding and to test out the features of kubernetes,
+I tried to make a project on Azure.
 
-I chose Microsoft Azure because I have some free credit.
+I chose Microsoft Azure just because I have some free credit.
 
 This is the configuration of my project.
 I added monitoring, logging, tls support, and secret data management.
 
-Now there are some problems.
-Azure Key Vault doesn't support mounting as environment variables.
-And now I can't see secrets on Azure Key Vault from outside.
+All Azure services but Database are managed with terraform.
+And of course, kubernetes resources are manifest files.
+So I can recreate the project environment easily.
 
-And metrics of prometheus and fluent bit are not enough.
+However, there are some problems that I came across.
+Azure Key Vault doesn't support mounting as an environment variable.
+Besides, secrets on Azure Key Vault are now inaccessible from outside the cluster.
 
-Next I want to add continuous delivery and service mesh.
+And metrics settings of prometheus and fluent bit are not enough.
+I don't know why for now.
+
+To expand my project, I want to try to add continuous delivery and service mesh.
+
+Source code is published on GitHub.
+And you can try the mattermost on my project.
 
 Thank you for listnening.
