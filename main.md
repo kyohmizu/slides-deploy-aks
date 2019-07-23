@@ -17,14 +17,16 @@ class: center, middle, blue
     - Docker/Kubernetes
     - Go
     - Security
+
+- Studying kubernetes for half a year
 ]
 
 ---
 ### Motivation
 
-- I've been studying kubernetes for half a year
-
 - But I don't use kubernetes for work...
+
+--
 
 - So, I tried to create cluster by myself
 
@@ -32,8 +34,26 @@ class: center, middle, blue
 class: header-margin
 ### Why AKS?
 
+.zoom1[
+<u><https://azure.microsoft.com/en-us/pricing/member-offers/credit-for-visual-studio-subscribers/></u>
+]
+
 <center><img src="azure-subscription-top.png" width=100%></center>
 <center><img src="azure-subscription.png" width=100%></center>
+
+---
+### App
+
+<u><https://mattermost.com/></u>
+
+<center><img src="mattermost-site.png" width=100%></center>
+
+---
+### App
+
+<u><https://mattermost.com/></u>
+
+<center><img src="mattermost-portal.png" width=80%></center>
 
 ---
 ### Configuration
@@ -41,7 +61,7 @@ class: header-margin
 .zoom1[
 - Kubernetes Cluster(AKS)
 
-  - Mattermost
+  - App(Mattermost)
 
   - Prometheus
 
@@ -86,16 +106,20 @@ class: header-margin
 
 .zoom1[
 - Azure Key Vault doesn't support env variables  
-<u><https://github.com/Azure/kubernetes-keyvault-flexvol/issues/28></u>
+<u><https://github.com/Azure/kubernetes-keyvault-flexvol/issues/28></u>  
+  (How can I deploy legacy apps using env variables?)
 
-- I can't see secrets of Azure Key Vault which was created with terraform  
-  (something wrong with access policies)
+- Secrets of Azure Key Vault, which were created with terraform, were inaccessible outside  
+  (Something wrong with access policies)
+
+- Metrics of prometheus and fluent bit are not enough  
 ]
 
 ---
 ### Next Step
 
-.zoom1[
+I want to add:
+
 - Continuous Delivery
 
   - Spinnaker, Argo CD, Tekton
@@ -103,14 +127,17 @@ class: header-margin
 - Service Mesh
 
   - Istio, SMI
-]
 
 ---
-### Source
+### Source Code
 
 <u><https://github.com/kyohmizu/mattermost-aks></u>
 
 - Any ideas are appreciated!!
+
+<img src="qr.png" width=30%>
+
+↑ You can join the mattermost team form above.
 
 ---
 class: center, middle, blue

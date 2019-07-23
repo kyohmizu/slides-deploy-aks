@@ -9,7 +9,14 @@ I wanted to test out the features of kubernetes, so I made the study project on 
 I chose Microsoft Azure because I have some free credit.
 
 This is the configuration of my project.
-I combined Azure managed services and kubernetes resources.
+I added monitoring, logging, tls support, and secret data management.
 
+Now there are some problems.
+Azure Key Vault doesn't support mounting as environment variables.
+And now I can't see secrets on Azure Key Vault from outside.
 
+And metrics of prometheus and fluent bit are not enough.
 
+Next I want to add continuous delivery and service mesh.
+
+Thank you for listnening.
