@@ -9,13 +9,15 @@ So in order deepen my understanding and to test out the features of kubernetes,
 I tried to make a project on Azure.
 
 I chose Microsoft Azure just because I have some free credit.
+AS an application running on the cluster, I chose mattermost.
+It's a chat application like slack. 
 
 This is the configuration of my project.
 I added monitoring, logging, tls support, and secret data management.
 
 All Azure services but Database are managed with terraform.
 And of course, kubernetes resources are manifest files.
-So I can recreate the project environment easily.
+So I can recreate the environment of my project easily.
 
 However, there are some problems that I came across.
 Azure Key Vault doesn't support mounting as an environment variable.

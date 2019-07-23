@@ -28,7 +28,7 @@ class: center, middle, blue
 
 --
 
-- So, I tried to create cluster by myself
+- So, I tried to create the self-study project by myself
 
 ---
 class: header-margin
