@@ -1,5 +1,6 @@
 class: center, middle, blue
-# Cluster Management on Azure
+## Self-Studying:
+### Cluster Management on Azure
 
 ---
 ### whoami
@@ -24,11 +25,11 @@ class: center, middle, blue
 ---
 ### Motivation
 
-- But I don't use kubernetes for work...
+- I don't use kubernetes for work...
 
 --
 
-- So, I tried to create the self-study project by myself
+- So, I tried to create the self-study project by myself!
 
 ---
 class: header-margin
@@ -104,7 +105,7 @@ class: header-margin
 ---
 ### IaC
 
-- All services (but DB) are managed with terraform
+- All Azure services (but DB) are managed with terraform
 
   - azurerm_resource_group
   - azurerm_kubernetes_cluster
@@ -129,7 +130,10 @@ $ terraform apply
 - Secrets on Azure Key Vault (which were created with terraform) are now inaccessible from outside the cluster  
   (Something wrong with access policies)
 
-- Metrics settings of prometheus and fluent bit are not enough  
+- I've not set metrics of prometheus and fluent bit properly yet  
+
+- I have to deploy some kubernetes resources in turn
+  (CD will solve it?)
 ]
 
 ---
